@@ -6,7 +6,7 @@
 <title>Aluminext · Crecer en 2027</title>
 <meta name="description" content="Caso de evaluación FP&amp;A Aluminext: diagnóstico 2026, decisiones y plan 2027. Estudio realizado por Paula Ximena Montalvo S.">
 <style>
-:root { --cds-font-size-caption: .6875rem; --cds-font-size-body: .8125rem; --cds-font-size-heading: .875rem; --cds-font-size-title: 1.25rem; --cds-font-weight-medium: 500;
+:root { --cds-font-size-caption: .859rem; --cds-font-size-body: 1.016rem; --cds-font-size-heading: 1.094rem; --cds-font-size-title: 1.5625rem; --cds-font-weight-medium: 500;
   --cds-gap-xs: .375rem; --cds-gap-sm: .5rem; --cds-gap-md: .75rem; --cds-gap-lg: 1.25rem; --cds-gap-xl: 2rem;
   --cds-pad-xs: .25rem; --cds-pad-sm: .375rem; --cds-pad-md: .5rem; --cds-pad-lg: .75rem; --cds-pad-xl: 1.25rem;
   --cds-radius: .25rem; --cds-dur-slow: .45s; --cds-chart-status-critical: #d03b3b;
@@ -189,6 +189,13 @@ table.ax-t { width: 100%; border-collapse: collapse; font-size: var(--cds-font-s
 .ax-step { flex: 1 1 7rem; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--color-border-line); border-top: 3px solid var(--ax-accent); border-radius: var(--cds-radius); background: var(--color-panel); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
 .ax-step .ax-b { font-size: var(--cds-font-size-body); color: var(--color-fg); }
 .ax-arrow { align-self: center; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+#overview .ax-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--cds-gap-lg); }
+#overview .ax-kpis > .ax-card { padding: var(--cds-pad-xl); min-height: 12rem; justify-content: center; gap: var(--cds-gap-sm); }
+#overview .ax-lbl { font-size: var(--cds-font-size-body); }
+#overview .ax-num { font-size: calc(var(--cds-font-size-title) * 2.2); }
+#overview .ax-delta { font-size: var(--cds-font-size-heading); }
+#overview .ax-kpis .ax-note { font-size: var(--cds-font-size-body); }
+@media (max-width: 640px) { #overview .ax-kpis { grid-template-columns: 1fr; } }
 #card-fuentes { justify-content: flex-start; }
 #card-fuentes .ax-chart { margin-block: auto; }
 #card-calc #ax-calc-form { margin-top: auto; }
